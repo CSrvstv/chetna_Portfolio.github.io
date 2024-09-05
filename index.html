@@ -65,6 +65,7 @@
             font-size: 20px;
             position: sticky;
             top: 0px;
+            z-index: 5;
         }
         .head,.t{
             font-family:Arial, Helvetica, sans-serif
@@ -75,20 +76,25 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .title{
-             background-image: url("Background.jpg") ;
+            background-image: url("Background.jpg") ;
             background-size:cover;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
         }
         .t_text{
             font-family:Arial, Helvetica, sans-serif;
             font-size: 25px;
             font-weight:bolder;
-            float:left;
-            margin: 50px;
-            margin-top: 140px;
         } 
+        .photo{
+             padding-top: 20px;
+        }
         .project{
             display: grid;
             grid-template-columns: repeat(3,1fr);
+            position: relative;
         }
         .p{
             text-align: center;
@@ -99,6 +105,11 @@
             margin:20px;
             padding-bottom: 5px;
             padding-top: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .p:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 15px 10px blueviolet; 
         }
         .h4{
             text-align: center;
@@ -168,7 +179,7 @@
     </nav>
     <div class="title" id="home">
         <div class="t_text">Hello!!! <br> Welcome to my Portfolio, where innovation meets creativity.<br>Explore my journey, projects, and the passion that drives my work. </div>
-        <img src="chetnaphoto.png" width="400px" padding="10px" margin="30px" alt="my pic">
+        <img src="chetnaphoto.png" width="350px" padding="20px" margin="30px" alt="my pic" class="photo">
         
     </div>
     <div id="project">
