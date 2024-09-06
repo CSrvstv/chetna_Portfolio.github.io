@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,183 +6,276 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        body{
-            background-color:rgb(2, 2, 2)
+        body {
+            background-color: rgb(2, 2, 2);
+            margin: 0;
+            padding: 0;
         }
         
-        
-        .e,.f{
+        .e, .f {
             text-align: center;
             color: rgb(253, 253, 253);
         }
-        .c{
-            background-image: url("Background.jpg") ;
+        
+        .c {
+            background-image: url("Background.jpg");
             background-size: cover;
             height: 200px;
         }
         
-      
-        
-        h2{
+        h2 {
             display: flex;
             flex-direction: row;
         }
-        a:link {
-            color:rgb(175, 111, 236);
-            background-color: transparent;
-            text-decoration: none;
-        }
-
-        a:visited {
+        
+        a {
             color: rgb(175, 111, 236);
             background-color: transparent;
             text-decoration: none;
         }
+
         a:hover {
             color: rgb(98, 12, 217);
-            background-color: transparent;
-            text-decoration: none;
         }
-        .m{
+
+        .m {
             text-align: center;
             margin: 20px;
         }
-        .n{
-            font-size: 30px;
+
+        .n {
+            font-size: 1.5em;
             border-radius: 10px;
             background-color: rgb(0, 0, 0);
             border-color: blueviolet;
+            padding: 10px;
         }
-        
-        .nav{
+
+        .nav {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            background-color:rgb(2, 2, 2);
+            background-color: rgb(2, 2, 2);
             color: blueviolet;
-            border-color: solid blueviolet;
-            border-radius: 2px;
-            font-size: 20px;
+            border-color: blueviolet;
+            font-size: 1.2em;
             position: sticky;
-            top: 0px;
+            top: 0;
             z-index: 5;
+            padding: 10px;
         }
-        .head,.t{
-            font-family:Arial, Helvetica, sans-serif
+
+        .head, .t {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .h1{
+
+        .h1 {
             text-align: center;
             color: blueviolet;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 0;
         }
-        .title{
-            background-image: url("Background.jpg") ;
-            background-size:cover;
+
+        .title {
+            background-image: url("Background.jpg");
+            background-size: cover;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
             flex-direction: row;
+            padding: 20px;
         }
-        .t_text{
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 25px;
-            font-weight:bolder;
-        } 
-        .photo{
-             padding-top: 20px;
+
+        .t_text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8em;
+            font-weight: bolder;
+            color: white;
         }
-        .project{
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            padding-top: 20px;
+        }
+
+        .project {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            position: relative;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
         }
-        .p{
+
+        .p {
             text-align: center;
-            justify-content: center;
             color: antiquewhite;
             border: 2px solid antiquewhite;
             border-radius: 5px;
-            margin:20px;
-            padding-bottom: 5px;
-            padding-top: 25px;
+            padding: 25px 0;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .p:hover{
+
+        .p:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 15px 10px blueviolet; 
+            box-shadow: 0 0 15px 10px blueviolet;
         }
-        .h4{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            font-size: medium;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-      .about{
-            background-image: url("Background.jpg") ;
+
+        .about {
+            background-image: url("Background.jpg");
             background-size: cover;
-            height: 500px;
-            padding-top: 90px;
+            padding: 90px 20px;
         }
+
         .s1 {
-        display: flex;
-        flex-direction: row;
-        border: 2px black solid;
-        border-radius: 5px;
-        margin: 20px;
-        margin-left: 100px;
-        margin-right: 100px;
-        background-color: rgba(255, 255, 255, 0.331);
-        padding: 10px;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 20px;
-        align-content: center;
-      }
-      .a_text{
-        padding: 40px;
-        font-family:'Times New Roman', Times, serif;
-        text-align: justify;
-        text-justify: inter-word;
-        font-size:larger;
-      }
-        .x{
-            font-size: medium;
-            font-weight: bold;
-            text-decoration: underline;
+            display: flex;
+            flex-direction: row;
+            border: 2px black solid;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.331);
+            padding: 10px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 20px;
+            align-content: center;
         }
-        .f{
-            display: block;
+
+        .a_text {
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+            font-size: larger;
+        }
+
+        .u {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .sub_footer {
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 100%;
+            max-width: 600px;
             border-radius: 10px;
             border-color: blueviolet;
             border: 10px;
         }
-        .footer{
+
+        .footer {
             background-color: blueviolet;
-            height: 30px;
+            padding: 10px;
+            text-align: center;
         }
-        .f{
-            justify-content: center;
-            align-items: center;
-        }
-        .u{
-            margin: 30px;
-            border: 3px solid black;
-            border-radius: 50%;
-            width : 300px;
-            height: 300px;
+
+        .l,.l1 {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
         }
         .l{
-            width : 40px;
-            height: 40px;
-            padding-left:10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .f{
+            width:100%;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .title {
+                flex-direction: column;
+            }
+            .t{
+                padding: 10px;
+            }
+            .photo{
+                width: 150px;
+                height: 150px;
+            }
+            .t_text {
+                text-align: center;
+                font-size: 1.4em;
+                color: black;
+                font-style: italic;
+            }
+
+            .project {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                padding: 10px;
+            }
+
+            .s1 {
+                flex-direction: column;
+                padding: 20px;
+                margin: 0;
+            }
+
+            .u {
+                width: 200px;
+                height: 200px;
+                margin-top: 20px;
+            }
+
+            .about {
+                padding: 60px 10px;
+            }
+
+            .n {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav,.title,.s1{
+                display: flex;
+                flex-direction: row;
+            }
+            .t{
+                padding: 10px;
+                font-size: 0.5em;
+            }
+            .head {
+                font-size: 0.5em;
+            }
+            .title{
+                padding-bottom: 0;
+                padding-top: 1vh;
+            }
+            .t_text {
+                font-size: 00.8em;
+                color: black;
+                font-style: italic;
+            }
+            .photo{
+                width: 30vw;
+                height: 30vw;
+            }
+            .h1{
+                font-size: 1em;
+            }
+            .project {
+                grid-template-columns: 1fr;
+            }
+            .a_text{
+                font-size: 0.4em;
+                font-style: italic;
+            }
+            .u {
+                width: 30vw;
+                height: 30vw;
+            }
+
+            .f {
+                width: 100%;
+            }
+            .l,.l1{
+                width: 5vw;
+                height: 5vw;
+            }
         }
     </style>
 </head>
@@ -193,69 +287,69 @@
         <a class="t" href="#project">Project</a>
         <a class="t" href="#resume">Resume</a>
     </nav>
+
     <div class="title" id="home">
         <div class="t_text">Hello!!! <br> Welcome to my Portfolio, where innovation meets creativity.<br>Explore my journey, projects, and the passion that drives my work. </div>
-        <img src="chetnaphoto.png" width="350px" padding="20px" margin="30px" alt="my pic" class="photo">
-        
+        <img src="chetnaphoto.png" alt="my pic" class="photo">
     </div>
+
     <div id="project">
         <h1 class="h1">PROJECTS</h1>
         <div class="project">
             <div class="p">
                 <a href="https://rouelete-game.vercel.app/"><img src="P1.png" width="300px" ></a>
-                <h3 class="h3" >Roulete Game</h3>
+                <h3 class="h3">Roulete Game</h3>
             </div>
             <div class="p">
                 <a href="https://smart-shopping-cart.vercel.app/"><img src="P2.png" width="340px" ></a>
-                <h3 class="h3" >Smart Shopping Trolley</h3>
+                <h3 class="h3">Smart Shopping Trolley</h3>
             </div>
             <div class="p">
                 <a href="https://food-ordering-website-snowy.vercel.app/"><img src="P3.png" width="300px" ></a>
-                <h3 class="h3" >Food Ordering Website</h3>
+                <h3 class="h3">Food Ordering Website</h3>
             </div>
             <div class="p">
                 <a href="https://online-course-website-five.vercel.app/"><img src="P4.png" width="300px" ></a>
-                <h3 class="h3" >Online Course Website</h3>
+                <h3 class="h3">Online Course Website</h3>
             </div>
             <div class="p">
                 <a href="https://chetna-tic-tac-toe.vercel.app/"><img src="P5.png" width="300px" ></a>
-                <h3 class="h3" >Tic-Tac-Toe</h3>
+                <h3 class="h3">Tic-Tac-Toe</h3>
             </div>
             <div class="p">
                 <a href="https://calculator-gold-six-50.vercel.app/"><img src="P6.png" width="300px" ></a>
-                <h3 class="h3" >Calculator</h3>
+                <h3 class="h3">Calculator</h3>
             </div>
         </div> 
     </div>
+
     <div id="about">
         <h1 class="h1">ABOUT ME</h1>
         <div class="about">
-        <div class="s1">
-              <span class="a_text">Throughout my time at university, I focused on building a solid foundation in HTML, React JS, and CSS, and have since transitioned to Fullstack development. I am dedicated to managing my responsibilities efficiently, ensuring that projects are completed on time through effective time management and a problem-solving approach. My strong academic record is matched by active participation in numerous clubs, which has enhanced my interpersonal skills and expanded my professional connections. These experiences have been instrumental in refining my leadership, decision-making, and communication abilities, allowing me to work seamlessly with colleagues, management, and clients.</span>
-            <img
-              class="u"
-              src="chetna_circle.png"
-              />
-        </div>
+            <div class="s1">
+                <span class="a_text">Throughout my time at university, I focused on building a solid foundation in HTML, React JS, and CSS, and have since transitioned to Fullstack development. I am dedicated to managing my responsibilities efficiently, ensuring that projects are completed on time through effective time management and a problem-solving approach. My strong academic record is matched by active participation in numerous clubs, which has enhanced my interpersonal skills and expanded my professional connections. These experiences have been instrumental in refining my leadership, decision-making, and communication abilities, allowing me to work seamlessly with colleagues, management, and clients.</span>
+                <img class="u" src="chetna_circle.png" alt="Chetna Srivastava">
+            </div>
         </div>
     </div>
+
     <div id="resume">
         <h1 class="h1">RESUME</h1>
-        <img class = "f" src="Resume_image.jpg" alt="">
+        <img class="f" src="Resume_image.jpg" alt="Resume">
         <div class="m">
-            <button class="n"> 
-                <a href="https://docs.google.com/document/d/14gTdfpfIVq7I3hb7IOlVhWIk5tETEj8g0e6vpqY5C8w/edit?usp=sharing">Download</a> 
-            </button> 
+            <button class="n">
+                <a href="https://docs.google.com/document/d/14gTdfpfIVq7I3hb7IOlVhWIk5tETEj8g0e6vpqY5C8w/edit?usp=sharing">Download</a>
+            </button>
         </div>
     </div>
+
     <div class="footer">
         <h4 class="h4">Get Connected With Me</h4>  
-        <div class="f">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chetnasrivastava.lko.up@gmail.com"><img class="l" src="m.png"></a>
-            <a  href="https://www.linkedin.com/in/chetnasrvstv/"><img class="l" src="L.png"></a>
-            <a href="https://github.com/CSrvstv"><img class="l" src="g.png"></a>
+        <div class="sub_footer">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chetnasrivastava.lko.up@gmail.com"><img class="l1" src="m.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/chetnasrvstv/"><img class="l" src="L.png" alt="LinkedIn"></a>
+            <a href="https://github.com/CSrvstv"><img class="l" src="g.png" alt="GitHub"></a>
         </div>
-        
     </div>
 </body>
 </html>
