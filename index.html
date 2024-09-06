@@ -11,18 +11,111 @@
             margin: 0;
             padding: 0;
         }
-        
-        .e, .f {
-            text-align: center;
-            color: rgb(253, 253, 253);
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(2, 2, 2);
+            color: blueviolet;
+            border-color: blueviolet;
+            font-size: 1.2em;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            padding: 1vh;
         }
-        
-        .c {
+        .head, .t {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .t{
+            background-color: transparent;
+            text-decoration: none;
+        }
+        .t:hover{
+            text-shadow:  0 0 20px #cfa1e8;
+        }
+        .title {
+            background-image: url("Background.jpg");
+            width: 100%;
+            background-size: cover;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            padding: 2vh;
+            padding-bottom: 0;
+        }
+        .t_text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+        }
+        .photo,.u {
+            width: 20vw;
+            height: auto;
+            padding-top: 2vw;
+        }
+        .h1 {
+            text-align: center;
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 0;
+        }
+        .project {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            padding-top: 20px;
+        }
+        .p {
+            text-align: center;
+            color: antiquewhite;
+            border: 2px solid antiquewhite;
+            border-radius: 5px;
+            padding: 25px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .p:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px 10px blueviolet;
+        }
+        .about {
             background-image: url("Background.jpg");
             background-size: cover;
-            height: 200px;
+            padding: 90px 20px;
         }
-        
+        .s1 {
+            display: flex;
+            flex-direction: row;
+            border: 2px black solid;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.331);
+            padding: 10px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 20px;
+            align-content: center;
+        }
+        .a_text {
+            padding: 20px;
+            font-size: 0.8em;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+            font-size: larger;
+        }
+        .u {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .x{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
         h2 {
             display: flex;
             flex-direction: row;
@@ -30,12 +123,12 @@
         
         a {
             color: rgb(175, 111, 236);
-            background-color: transparent;
-            text-decoration: none;
+            
         }
 
         a:hover {
-            color: rgb(98, 12, 217);
+             
+            color: rgb(219, 162, 243);
         }
 
         .m {
@@ -49,109 +142,13 @@
             background-color: rgb(0, 0, 0);
             border-color: blueviolet;
             padding: 10px;
+            text-decoration: none;
         }
-
-        .nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            background-color: rgb(2, 2, 2);
-            color: blueviolet;
-            border-color: blueviolet;
-            font-size: 1.2em;
-            position: sticky;
-            top: 0;
-            z-index: 5;
+        .footer {
+            background-color: blueviolet;
             padding: 10px;
-        }
-
-        .head, .t {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .h1 {
             text-align: center;
-            color: blueviolet;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 20px 0;
         }
-
-        .title {
-            background-image: url("Background.jpg");
-            background-size: cover;
-            justify-content: space-evenly;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            padding: 20px;
-        }
-
-        .t_text {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.8em;
-            font-weight: bolder;
-            color: white;
-        }
-
-        .photo {
-            max-width: 100%;
-            height: auto;
-            padding-top: 20px;
-        }
-
-        .project {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .p {
-            text-align: center;
-            color: antiquewhite;
-            border: 2px solid antiquewhite;
-            border-radius: 5px;
-            padding: 25px 0;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .p:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px 10px blueviolet;
-        }
-
-        .about {
-            background-image: url("Background.jpg");
-            background-size: cover;
-            padding: 90px 20px;
-        }
-
-        .s1 {
-            display: flex;
-            flex-direction: row;
-            border: 2px black solid;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.331);
-            padding: 10px;
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-size: 20px;
-            align-content: center;
-        }
-
-        .a_text {
-            padding: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: justify;
-            font-size: larger;
-        }
-
-        .u {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-        }
-
         .sub_footer {
             margin-left: auto;
             margin-right: auto;
@@ -161,13 +158,9 @@
             border-color: blueviolet;
             border: 10px;
         }
-
-        .footer {
-            background-color: blueviolet;
-            padding: 10px;
-            text-align: center;
+        .h4{
+            font-size: 1.6em;
         }
-
         .l,.l1 {
             width: 40px;
             height: 40px;
@@ -181,16 +174,17 @@
             width:100%;
         }
         @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                padding: 10px;
-            }
-
-            .title {
-                flex-direction: column;
+            .nav,.title,.s1{
+                display: flex;
+                flex-direction: row;
             }
             .t{
+                font-size: 1em;
                 padding: 10px;
+            }
+            .title{
+                padding-bottom: 0;
+                padding-top: 1vh;
             }
             .photo{
                 width: 150px;
@@ -198,26 +192,19 @@
             }
             .t_text {
                 text-align: center;
-                font-size: 1.4em;
+                font-size: 1.2em;
                 color: black;
                 font-style: italic;
             }
-
             .project {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 padding: 10px;
             }
-
-            .s1 {
-                flex-direction: column;
-                padding: 20px;
-                margin: 0;
-            }
-
             .u {
-                width: 200px;
-                height: 200px;
-                margin-top: 20px;
+                width: 30vw;
+                height: 30vw;
+            }
+            .a_text{
+                font-size: 0.8em;
             }
 
             .about {
@@ -257,9 +244,7 @@
             .h1{
                 font-size: 1em;
             }
-            .project {
-                grid-template-columns: 1fr;
-            }
+            
             .a_text{
                 font-size: 0.4em;
                 font-style: italic;
@@ -317,7 +302,7 @@
                 <h3 class="h3">Tic-Tac-Toe</h3>
             </div>
             <div class="p">
-                <a href="https://calculator-gold-six-50.vercel.app/"><img src="P6.png" width="300px" ></a>
+                <a href="https://calculator-gold-six-50.vercel.app/"><img src="P6.png" width="300px" height="161px"></a>
                 <h3 class="h3">Calculator</h3>
             </div>
         </div> 
@@ -334,13 +319,13 @@
     </div>
 
     <div id="resume">
-        <h1 class="h1">RESUME</h1>
-        <img class="f" src="Resume_image.jpg" alt="Resume">
-        <div class="m">
-            <button class="n">
-                <a href="https://docs.google.com/document/d/14gTdfpfIVq7I3hb7IOlVhWIk5tETEj8g0e6vpqY5C8w/edit?usp=sharing">Download</a>
-            </button>
+        <div class="x">
+            <h1 class="h1">RESUME</h1>
+            <a href="2024_Resume.pdf" download="Chetna_Srivastava_Resume.pdf">
+                <img src="d.png" alt="Click to download PDF" width="30vw">
+            </a>
         </div>
+        <img class="f" src="Resume_image.jpg" alt="Resume">
     </div>
 
     <div class="footer">
